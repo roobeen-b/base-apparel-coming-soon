@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Luxurious+Roman&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: hsl(0, 6%, 24%);
+  margin-top: 15%;
+  letter-spacing: 0.2em;
+}
+
+p {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  margin-top: 5%;
+  opacity: 0.8;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#we {
+  font-size: 1em;
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.container .text {
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+  padding: 5% 30% 5% 10%;
+  flex: 70%;
+}
+
+.image {
+  flex: 30%;
+  height: 100%;
+  width: 100%;
+}
+
+.image img {
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.input-form {
+  position: relative;
+}
+
+.input-form input,
+.input-form button {
+  display: inline-block;
+}
+
+input[type="email"] {
+  padding: 15px 10px 15px 20px;
+  margin-top: 40px;
+  border: solid hsl(0, 53%, 88%) 1px;
+  border-radius: 20px;
+  width: 95%;
+}
+
+::placeholder {
+  opacity: 0.3;
+}
+
+button {
+  z-index: 1;
+  position: absolute;
+  margin-left: -45px;
+  top: 39px;
+  width: 80px;
+  height: 50px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.16);
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 375px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    display: block;
+    text-align: center;
+  }
+
+  .image img {
+    position: static;
+    background-image: url(images/hero-mobile.jpg);
+  }
+}

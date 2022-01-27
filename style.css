@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Luxurious+Roman&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+}
+
+header {
+  height: 15vh;
+  padding: 5%;
+}
+
+header img {
+  height: 20px;
+  margin: 10%;
+  background-position: center;
+}
+
+.pic {
+  height: 30vh;
+  background-image: url(images/hero-mobile.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.desc {
+  text-align: center;
+  padding: 20% 5%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 5%;
+}
+
+span {
+  display: block;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+span:first-of-type {
+  color: hsl(0, 36%, 70%);
+}
+
+p {
+  margin: 5%;
+  color: hsl(0, 36%, 70%);
+}
+
+.input {
+  margin: 5%;
+  position: relative;
+}
+
+input {
+  width: 95%;
+  height: 45px;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 20px;
+  border: solid hsl(0, 53%, 88%) 1px;
+}
+
+::placeholder {
+  opacity: 0.3;
+}
+
+button {
+  position: absolute;
+  display: inline-block;
+  border-radius: 20px;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  border: 0;
+  outline: none;
+  padding: 10px 25px;
+  box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.16);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  transition: ease 0.5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:focus {
+  outline: none;
+}
+
+input:required {
+  color: hsl(0, 74%, 74%);
+}
+
+@media screen and (min-width: 768px) {
+  header img {
+    margin: 2%;
+    height: 5vh;
+  }
+
+  .desc {
+    padding: 5% 10%;
+  }
+
+  .pic {
+    height: 70vh;
+    background-image: url(images/hero-mobile.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .pic {
+    background-image: url(images/hero-desktop.jpg);
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  header img {
+    height: 5vh;
+    margin: 15px 0px 25px 35px;
+    padding: 0 5%;
+  }
+
+  section.desc {
+    text-align: left;
+    padding: 4% 10%;
+    width: 60%;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 3.5rem;
+    letter-spacing: 30px;
+  }
+
+  button {
+    padding: 10px 35px;
+  }
+}
